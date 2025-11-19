@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelybeth A. Bojo Portfolio</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">🌙 Dark Mode</button>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1>Jelybeth A. Bojo</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="c:\Users\DICT\Pictures\Screenshots\me.jpg" alt="Jelybeth A. Bojo" class="profile-pic">
+            <p>Hi! I'm Almera K. Cuello, a first-year BSIT student. I enjoy learning about creativity and new technologies. My goal is to develop innovative solutions and grow as a tech professional.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill" style="background-color:#f39c12;">HTML</div>
+        <div class="skill" style="background-color:#3498db;">CSS</div>
+        <div class="skill" style="background-color:#2ecc71;">JavaScript</div>
+        <div class="skill" style="background-color:#9b59b6;">Python</div>
+        <div class="skill" style="background-color:#e74c3c;">Java</div>
+    </div>
+</section>
+ 
+<!-- Hobbies Section -->
+<section id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="hobbies-container">
+        <div class="hobby-card">🎨 Drawing</div>
+        <div class="hobby-card">📚 Reading</div>
+        <div class="hobby-card">🎵 Listening to Music</div>
+        <div class="hobby-card">🏃‍♀️ Jogging</div>
+        <div class="hobby-card">🌱 Gardening</div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>facebook: <a href="mailto:https://www.facebook.com/share/17VtHYJHfg/">https://www.facebook.com/almera.cuello.18</a></p>
+        <p>Email: <a href="mailto:2501114963@student.buksu.edu.ph">2501114963@student.buksu.edu.ph</a></p>
+        <p>Phone: +63 995 180 4202</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Almera K. Cuello. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Theme Toggle -->
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            if(document.body.classList.contains('dark-theme')){
+                toggleButton.textContent = '☀️ Light Mode';
+            } else {
+                toggleButton.textContent = '🌙 Dark Mode';
+            }
+        });
+    </script>
+</body>
+</html>
